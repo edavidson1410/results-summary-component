@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.border-container {
+    padding: 10%;
+}
+
+.main-container, .left-container, .right-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-container {
+    padding: 10%;
+    border: solid black 5px;
+    border-radius: 25px;
+    box-shadow: 10px 5px 5px #ccc;
+}
