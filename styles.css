@@ -1,8 +1,10 @@
 body {
     margin: 0;
     height: 100vh;
+    font-family: sans-serif;
 }
 
+/* main containers */
 .border-container {
     padding: 10%;
 }
@@ -18,29 +20,72 @@ body {
     flex-direction: column;
     flex: 1 1 auto;
     align-items: center;
-    width: 30vw;
+    width: 40vw;
+    padding: 20px;
 }
 
 .main-container {
     border: solid white 0px;
     border-radius: 25px;
     box-shadow: 5px 5px 5px #e7e8f7;
-    width: 50vw;
+    width: 60vw;
     height: 40vw;
 }
 
 .left-container {
     border-radius: 25px;
     background: rgb(104,67,254);
-    background: linear-gradient( rgba(104,67,254,1) 35%, rgba(51,44,236,1) 100%);
+    background: linear-gradient( rgba(104,67,254,1) 1%, rgba(51,44,236,1) 100%);
     color: white;
+}
+
+/* right inner card containers and styling */
+
+li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    list-style-type: none;
+    width: 85%;
+    margin: 0 auto;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+button {
+    background-color: #303b59;
+    color: white;
+    padding: 5%;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.scores {
+    display: flex;
+    gap: 0.4rem;
+}
+
+.scoreCategories {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   gap: 20px;
+   width: 100%;
+}
+
+/* left score card styling */
+.scoreCircle {
+    height: 30%;
+    width: 40%;
+    border-radius: 50%;
+    background: linear-gradient( rgba(74,35,203,255) 1%, rgba(51,44,236,1) 100%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .scoreDescription {
     display: flex;
     flex-wrap: wrap;
-}
-
-li {
-    list-style-type: none;
 }

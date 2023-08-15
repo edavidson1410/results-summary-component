@@ -15,42 +15,53 @@
   <div class="border-container">
     <div class="main-container">
       <div class="left-container">
-        <div>
-          Your Result
-        </div>
-          76
-          of 100
-        <div>
-          Great
-        </div>
-        <div class="scoreDescription">
+        <div style="opacity: 50%;">Your Result</div>
+        <div class="scoreCircle">
+          <div style="font-size: 2.5rem;">76</div>
+          <div style="opacity: 50%;">of 100</div>
+        </div>          
+        <div style="font-size: 1.5rem;">Great</div>
+        <div class="scoreDescription" style="font-size: .75rem; opacity: 50%;">
           You scored higher than 65% of the people who have taken these tests.
         </div>
-
       </div>
       <ul class="right-container">
-        <li>
-          Summary
-        </li>
-        <li>
-          Reaction
-          80 / 100         
-        </li>
-        <li>
-          Memory
-          92 / 100         
-        </li>
-        <li>
-          Verbal
-          61 / 100          
-        </li>
-        <li>
-          Visual
-          72 / 100         
-        </li>
-        <li>
-          Continue
-        </li>
+        <li style="font-size: 1.5rem;">Summary</li>
+        <div class="scoreCategories">
+          <li style="background-color: #fff6f5; color: #F55">
+            <img src="assets/images/icon-reaction.svg" alt="lightning bolt">
+            Reaction 
+            <div class="scores">
+              <div style="color: black;">80</div>
+              <div style="color: #958f94;"> / 100</div>
+            </div>
+          </li>
+          <li style="background-color: #fffbf2; color: #FFB21E;">
+            <img src="assets/images/icon-memory.svg" alt="brain">
+            Memory 
+            <div class="scores">
+              <div style="color: black;">92</div>
+              <div style="color: #958f94;"> / 100</div>
+            </div>
+          </li>
+          <li style="background-color: #f2fbfa; color: #00BB8F">
+            <img src="assets/images/icon-verbal.svg" alt="chat bubble">
+            Verbal 
+            <div class="scores">
+              <div style="color: black;">61</div>
+              <div style="color: #958f94;"> / 100</div>
+            </div>
+          </li>
+          <li style="background-color: #f3f3fd; color: #1125D6">
+            <img src="assets/images/icon-visual.svg" alt="eye">
+            Visual 
+            <div class="scores">
+              <div style="color: black;">72</div>
+              <div style="color: #958f94;"> / 100</div>
+            </div>
+          </li>
+        </div>
+        <button type="button">Continue</button>
       </ul>
     </div>
   </div>
