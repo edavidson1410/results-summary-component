@@ -10,12 +10,37 @@ body {
 .main-container, .left-container, .right-container {
     display: flex;
     justify-content: space-between;
+    align-items: center stretch;
+    margin: 0 auto;
+}
+
+.left-container, .right-container {
+    flex-direction: column;
+    flex: 1 1 auto;
     align-items: center;
+    width: 30vw;
 }
 
 .main-container {
-    padding: 10%;
-    border: solid black 5px;
+    border: solid white 0px;
     border-radius: 25px;
-    box-shadow: 10px 5px 5px #ccc;
+    box-shadow: 5px 5px 5px #e7e8f7;
+    width: 50vw;
+    height: 40vw;
+}
+
+.left-container {
+    border-radius: 25px;
+    background: rgb(104,67,254);
+    background: linear-gradient( rgba(104,67,254,1) 35%, rgba(51,44,236,1) 100%);
+    color: white;
+}
+
+.scoreDescription {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    list-style-type: none;
 }
